@@ -35,7 +35,7 @@ System.NotImplementedException: The method or operation is not implemented.
     {
         if (firstRender)
         {
-            var proxy = new DynamicProxy.ProxyGenerator().CreateInterfaceProxyWithoutTarget(typeof(MonoProblematicInterface));
+            var proxy = new DynamicProxy.ProxyGenerator().CreateInterfaceProxyWithoutTarget(typeof(IMonoProblematicInterface));
         }
 
         base.OnAfterRender(firstRender);

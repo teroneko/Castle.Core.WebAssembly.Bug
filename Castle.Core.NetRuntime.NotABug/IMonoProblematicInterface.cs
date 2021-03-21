@@ -1,6 +1,6 @@
-﻿namespace Castle.Core.WebAssembly.Bug
+﻿namespace Castle.Core.NetRuntime.NotABug
 {
-    public interface MonoProblematicInterface
+    public interface IMonoProblematicInterface
     {
         // THIS IS IRONY.
         public void DiscriminatedFromMonoBecauseImGeneric<T>();
