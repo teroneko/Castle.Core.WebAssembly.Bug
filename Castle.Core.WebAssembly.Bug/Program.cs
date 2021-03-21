@@ -10,6 +10,8 @@ namespace Castle.Core.WebAssembly.Bug
     {
         public static async Task Main(string[] args)
         {
+            _ = TestUtils.CreateProxy();
+
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
